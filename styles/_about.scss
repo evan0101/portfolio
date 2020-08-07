@@ -1,0 +1,41 @@
+#about {
+  overflow: hidden;
+  position: relative;
+
+  #about-container {
+    padding: 128px 0px;
+
+    #about-text {
+      margin-top: 8px;
+      color: $gray-700;
+    }
+
+    #about-info {
+      line-height: 1.7;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  #about {
+    #about-container {
+      #about-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: -200px;
+      bottom: -32px;
+      right: -300px;
+      z-index: -1;
+      width: 45.66667%;
+      height: 100%;
+      margin-left: -33.333335%;
+      opacity: 0.4;
+      content: "";
+      background: url(/dots-small.svg);
+    }
+  }
+}
