@@ -5,7 +5,7 @@ import Experience from "components/Experience";
 import Work from "components/Work";
 import Head from "next/head";
 
-const IndexPage = (props) => {
+const IndexPage = () => {
   return (
     <>
       <Head>
